@@ -1,0 +1,27 @@
+.menu  {
+  font-size: 14px;
+  width: 100%;
+  display: grid;
+  grid-column: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  padding: 5px 200px;
+  
+}
+.menu .dropped button{
+  color: #000;
+}
+.menu .dropped button:hover{
+  color: #d98484;
+}
+
+.menu .dropped-content {
+  background: #fff;
+  border: 1px solid rgb(46, 46, 46);
+}
+
+.menu img{
+  
+}
