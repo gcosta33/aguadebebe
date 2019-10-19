@@ -2,6 +2,7 @@ import React from 'react';
 import './index.css'
 
 import banner from '../../assets/banner.jpg'
+import Product from '../../components/Product'
 
 export default function Home(){
   return(
@@ -33,8 +34,11 @@ export default function Home(){
       <div className="products">
         <h3>NOVOS PRODUTOS</h3>
         <h6>PARA SEU BEBÊ</h6>
-        <div className="product">
-          
+        <div className="product-grid">
+          <Product></Product>
+          <Product></Product>
+          <Product></Product>
+          <Product></Product>
         </div>
       </div>
       
