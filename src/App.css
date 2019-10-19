@@ -26,7 +26,14 @@ body {
 
 body, input, button {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
-
+h3{
+  color: #d98484;
+  font-size: 30px;
+}
+h6{
+  color: #d98484;
+  font-size: 24px;
+}
 

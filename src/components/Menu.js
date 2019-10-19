@@ -65,11 +65,18 @@ export default function Menu(props,{history}) {
           <button>Andadores</button>
         </div>
       </div>
-     
+      <div className="dropped">
+          
       <button onClick={()=>console.log('a')}>
         <i className="fa fa-shopping-bag">
         </i>
       </button>
+          <div className="dropped-content">
+            <ul >
+             <li>produtos</li>
+            </ul>
+          </div>
+          </div>
     </div>
   )
 }
