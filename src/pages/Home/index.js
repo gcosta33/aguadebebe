@@ -10,7 +10,7 @@ export default function Home(){
   return(
     <div className="container">
       <div className="images">
-        <img src={banner}/>
+        <img src={banner} alt="banner"/>
         
       </div>
       <div className="info">
@@ -30,7 +30,7 @@ export default function Home(){
         </div>
       </div>
       <div className="images">
-        <img src={banner}/>
+        <img src={banner} alt="banner"/>
         
       </div>
       <div className="products">
@@ -53,8 +53,10 @@ export default function Home(){
         
         <div >
           <span>ACOMPANHE NOSSAS OFERTAS </span>
-          <input type="mail"/>
-          <i className="fa fa-arrow-right"></i>
+          <input type="mail" placeholder="seuemail@mail.com"/>
+          <button >
+            <i className="fa fa-arrow-right"></i>
+          </button>
         </div>
       
       </div>

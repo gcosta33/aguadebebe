@@ -1,10 +1,15 @@
 import React from 'react';
 import './Product.css';
 
+import noimg from '../assets/noimg.png'
+
 export default function Product(props) {
   return (
     <div className="product" >
-      <img src="" />
+      <img 
+      src={props.img?props.img:noimg} 
+      alt="product"
+      />
       <div id="desc">
         <div id="categ">
           <span>Roupa</span>
@@ -12,7 +17,7 @@ export default function Product(props) {
         </div>
 
         <button>
-          <i className="fa fa-heart-o"></i>
+          <i className="fa fa-heart"></i>
         </button>
       </div>
       <div id="name">

@@ -26,6 +26,12 @@
  padding: 0px 15px;
 }
 
+.info button{
+  margin-left: 5px;
+  color:#fff;
+  font-size: 16px;
+
+}
 
 .container .products{
   margin-top: 50px;
@@ -41,6 +47,11 @@
   width: 100%;
   display: grid;
   grid-column: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 
+  1fr 
+  1fr 
+  1fr 
+  1fr
+  ;
 }
 

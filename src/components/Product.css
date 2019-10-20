@@ -10,6 +10,7 @@
 .product img {
     height: 350px;
     width: 100%;
+   
 }
 
 .product #desc {
@@ -17,7 +18,10 @@
     width: 100%;
     display: grid;
     grid-column: auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 
+    1fr 
+    1fr
+    ;
 }
 
 .product i:hover {
@@ -28,7 +32,10 @@
     width: 100%;
     display: grid;
     grid-column: auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 
+    1fr 
+    1fr
+    ;
     column-gap: 20px;
     color: #bbb;
     font-size:18px;
@@ -36,6 +43,8 @@
 }
 #desc button{
     text-align: right;
+    color: #ccc;
+    font-size: 18px;
 
 }
 .product #name {
@@ -46,15 +55,14 @@
 
 .product #price {
    
-    margin-top: 60px;
+    margin-top: 50px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
 }
 .product:hover #price {
-    animation-name: slice-reverse;
-    animation-duration: 500ms;
+    display: none;
     
 }
 .product:hover #select {
@@ -64,7 +72,7 @@
 }
 .product #rs{
     color: #d98484;
-    font-size: 24px;
+    font-size: 25px;
 }
 
 .product #value{
@@ -73,7 +81,7 @@
     line-height: 45px;
 }
 .product #select{
-    margin-top: 40px;
+    margin-top: 10px;
     width: 100%;
     display: none;
     flex-direction: column;
@@ -82,16 +90,16 @@
 }
 .product select{
     width: 100%;
-    height: 30px;
+    height: 35px;
 
 }
 #select button{
     margin-top: 5px;
     width: 100%;
-    height: 30px;
+    height: 40px;
     display: flex;
     justify-content: space-evenly;
-    font-size: 14px;
+    font-size: 18px;
     background: #ccc;
     border: 1px solid #ccc;
     color: #d98484;
@@ -104,25 +112,15 @@
 
 @keyframes slice{
     from{
-        transform: translateX(100px)
-        scaleX(0)
+        transform: translatey(-50px);
+        opacity: 0;
+        
         }
         to{
-        transform: translateX(0px)
-        scaleX(1)
+        transform: translateX(0px);
+        opacity: 1;
+        
         }
     }
     
-@keyframes slice-reverse{
-        from{
-            transform: translateX(0px)
-            scaleX(1)
-            }
-        to{
-            transform: translateX(-100px)
-            scaleX(0);
-        }
-        to{
-            display: none;
-        }
-    }
+

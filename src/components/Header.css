@@ -16,7 +16,11 @@
   height: 30px;
   display: grid;
   grid-column: auto;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 
+  1fr 
+  1fr 
+  1fr
+  ;
 
   display: flex;
   justify-content: space-between;
@@ -70,6 +74,8 @@
 
 .dropped:hover .dropped-content{
   display: block;
+  animation-name: slice-reverse;
+  animation-duration: 500ms;
   
 }
   .dropped-content button:hover {
@@ -84,3 +90,16 @@
   display: flex;
   font-size: 8px;
 }
+
+@keyframes slice-reverse{
+  from{
+      transform: translatey(50px);
+      opacity: 0;
+    
+      }
+      to{
+      transform: translateX(0px);
+      opacity: 1;
+      }
+  }
+  

@@ -6,7 +6,7 @@ import logo from '../assets/logo.jpg';
 export default function Footer() {
   return (
     <div id="footer">
-      <img src={logo}/>
+      <img src={logo} alt="logo"/>
       <button>SOBRE</button>
       <button>FALE CONOSCO</button>
       <button>AJUDA</button>
