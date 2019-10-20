@@ -17,6 +17,7 @@ a:hover, button:hover, .social i:hover{
 
 html, body, #root {
   min-height: 100%;
+  min-width: 500px;
 }
 
 body {

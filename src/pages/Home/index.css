@@ -23,11 +23,9 @@
  display: flex;
  justify-content: space-between;
  align-items: center;
+ padding: 0px 15px;
 }
 
-.container .info div{
-  padding: 0px 15px;
-}
 
 .container .products{
   margin-top: 50px;
@@ -36,6 +34,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-bottom: 50px;
   
 }
 .product-grid{

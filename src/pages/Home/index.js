@@ -1,8 +1,10 @@
 import React from 'react';
-import './index.css'
+import './index.css';
 
-import banner from '../../assets/banner.jpg'
-import Product from '../../components/Product'
+import banner from '../../assets/banner.jpg';
+import Product from '../../components/Product';
+import Footer from '../../components/Footer';
+
 
 export default function Home(){
   return(
@@ -41,6 +43,22 @@ export default function Home(){
           <Product></Product>
         </div>
       </div>
+      <div className="info">
+        <div className="social">
+          <i className="fa fa-facebook-square"></i>
+          <i className="fa fa-twitter-square"></i>
+          <i className="fa fa-instagram"></i>
+          <i className="fa fa-vimeo-square"></i>
+        </div>
+        
+        <div >
+          <span>ACOMPANHE NOSSAS OFERTAS </span>
+          <input type="mail"/>
+          <i className="fa fa-arrow-right"></i>
+        </div>
+      
+      </div>
+      <Footer></Footer>
       
     </div>
   )

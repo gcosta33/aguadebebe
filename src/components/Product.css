@@ -29,23 +29,100 @@
     display: grid;
     grid-column: auto;
     grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
     color: #bbb;
     font-size:18px;
     font-style: italic;
 }
-#desc i:hover{
-    
+#desc button{
+    text-align: right;
 
 }
 .product #name {
-    width: 80%;
     text-align: left;
-    color: #d98484;
+    color: #000;
+    font-size: 24px;
 }
 
 .product #price {
+   
+    margin-top: 60px;
     width: 100%;
-    display: grid;
-    grid-column: auto;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
+.product:hover #price {
+    animation-name: slice-reverse;
+    animation-duration: 500ms;
+    
+}
+.product:hover #select {
+    display: flex;
+    animation-name: slice;
+    animation-duration: 500ms;
+}
+.product #rs{
+    color: #d98484;
+    font-size: 24px;
+}
+
+.product #value{
+    color: #d98484;
+    font-size: 60px;
+    line-height: 45px;
+}
+.product #select{
+    margin-top: 40px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.product select{
+    width: 100%;
+    height: 30px;
+
+}
+#select button{
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    background: #ccc;
+    border: 1px solid #ccc;
+    color: #d98484;
+}
+
+#select button:hover{
+    background: rgb(255, 59, 59);
+    color: #fff;
+}
+
+@keyframes slice{
+    from{
+        transform: translateX(100px)
+        scaleX(0)
+        }
+        to{
+        transform: translateX(0px)
+        scaleX(1)
+        }
+    }
+    
+@keyframes slice-reverse{
+        from{
+            transform: translateX(0px)
+            scaleX(1)
+            }
+        to{
+            transform: translateX(-100px)
+            scaleX(0);
+        }
+        to{
+            display: none;
+        }
+    }
