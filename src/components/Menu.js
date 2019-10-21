@@ -1,7 +1,10 @@
 import React from 'react';
 import './Menu.css'
 
+import Cart from './Cart'
+
 export default function Menu(props,{history}) {
+ 
   return (
     <div className="menu">
       <img src={props.logo} alt="logo" />
@@ -53,30 +56,8 @@ export default function Menu(props,{history}) {
           <button>Andadores</button>
         </div>
       </div>
-      <div className="dropped">
-        <button>
-          <span>BEBÊ</span>
-          <i className="fa fa-angle-down" ></i>
-        </button>
-        <div className="dropped-content">
-          <button>Mamadeiras</button>
-          <button>Mhupetas</button>
-          <button>Chocalhos</button>
-          <button>Andadores</button>
-        </div>
-      </div>
-      <div className="dropped">
-          
-      <button onClick={()=>console.log('a')}>
-        <i className="fa fa-shopping-bag">
-        </i>
-      </button>
-          <div className="dropped-content">
-            <ul >
-             <li>produtos</li >
-            </ul>
-          </div>
-          </div>
+     
+     <Cart></Cart>
     </div>
   )
 }

@@ -1,12 +1,19 @@
-import React from 'react';
+import React,{ useEffect, useState} from 'react';
 import './index.css';
 
 import banner from '../../assets/banner.jpg';
 import Product from '../../components/Product';
 import Footer from '../../components/Footer';
 
+import {returnProducts} from '../../util/Server';
 
 export default function Home(){
+  const [products, setProducts] = useState([])
+  useEffect(() => {
+    setProducts(returnProducts)
+
+}, [])
+
   return(
     <div className="container">
       <div className="images">
@@ -37,10 +44,9 @@ export default function Home(){
         <h3>NOVOS PRODUTOS</h3>
         <h6>PARA SEU BEBÊ</h6>
         <div className="product-grid">
-          <Product></Product>
-          <Product></Product>
-          <Product></Product>
-          <Product></Product>
+          {products.map(product =>(
+            <Product key={product.id} product={product}></Product>
+          ))}
         </div>
       </div>
       <div className="info">

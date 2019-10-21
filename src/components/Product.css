@@ -10,6 +10,9 @@
 .product img {
     height: 350px;
     width: 100%;
+    background-color: #ddd;
+    background-size: cover;
+    object-fit: contain;
    
 }
 
@@ -36,11 +39,21 @@
     1fr 
     1fr
     ;
-    column-gap: 20px;
+    column-gap: 0.5pc;
     color: #bbb;
     font-size:18px;
     font-style: italic;
 }
+@media(max-width:768px){
+    #desc #categ {
+      width: 100%;
+      grid-template-columns:
+      1fr
+      1fr
+      ;
+    }
+  }
+  
 #desc button{
     text-align: right;
     color: #ccc;

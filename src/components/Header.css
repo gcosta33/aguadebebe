@@ -5,6 +5,13 @@
   width: 100%;
  
 }
+@media(max-width:768px){
+  #header{
+    height: 150px;
+  }
+}
+
+
 #header img{
   background-size: cover;
   height: 60px;
@@ -27,6 +34,14 @@
   align-items: center;
   color: #fff;
   padding: 0px 50px;
+}
+@media(max-width:768px){
+  .head{
+    
+    grid-template-columns:
+    1fr
+    1fr;
+  }
 }
 
 .social{

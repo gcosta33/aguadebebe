@@ -15,7 +15,26 @@
   height: 120px;
 
 }
+@media(min-width:501px) and (max-width:768px){
+  #footer{
+    width: 100%;
+    grid-template-columns:
+    1fr
+    1fr
+    1fr;
+    
+  }
+}
 
+@media (max-width:500px){
+  #footer{
+    width: 100%;
+    grid-template-columns:
+    1fr
+    1fr;
+    
+  }
+}
 #footer img{
   width: 80px;
   height: 40px;
